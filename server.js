@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 2999;
 
 app.use(express.json());
 app.use(
@@ -75,4 +75,4 @@ app.delete('/api/todos/:id', (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(port, () => console.log(`listening on port ${PORT}`));
+app.listen(PORT, () => console.log(`listening on port ${PORT}`));
